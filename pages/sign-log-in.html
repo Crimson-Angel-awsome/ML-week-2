@@ -7,14 +7,65 @@
 </head>
 <body>
     <main>
-        <section class="revibe">
-            
-        </section>
-        <section class="login">
+       <section class="capture">
+        <h1><a href="index.html">VibeCheck</a></h1>
 
+         <!-- Tabs -->
+        <section class="tabs">
+            <div class="switch-tabs">
+                <button class="tab-active" data-tab="Login">Log in</button>
+                <button class="tab" data-tab="Signup">Sign up</button>
+            </div>
         </section>
-        <section class="sign-up">
-            
+
+        <!-- Log-in form -->
+         <section class="tab-content-real" id="Login">
+            <h2>Log-in</h2>
+            <form id="log-in">
+                <div>
+                    <p><label for="email">Email Address</label><br>
+                    <input type="email" name="email" id="email" placeholder="write your username" required autocomplete="username" /></p>
+                </div>
+
+                <div>
+                    <p><label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="write your password" required/></p>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit" class="submit-btn">Login</button>
+                </div>
+            </form>
+         </section>
+
+            <!-- Sign-up form -->
+             <section class="tab-content-real" id="sign-up">
+            <h2>Sign-up</h2>
+            <form id="sign-up">
+                <div class="form-group">
+                    <p><label for="username">Username</label>
+                    <input type="text" name="username" id="username" required autocomplete="username" />
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        <label for="email">Email</label></p>
+                        <input type="email" name="email" id="email" required autocomplete="email"/>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required autocomplete="new-password"/>
+                    </p>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit" class="submit-btn">Sign up</button>
+                </div>
+            </form>
+             </section>    
+                
         </section>
     </main>
 </body>
