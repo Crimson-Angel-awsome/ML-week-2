@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0e1024;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background: #14173a;
+}
+
+.navbar h2 {
+  color: #7c5cff;
+}
+
+.navbar select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1f235a;
+  color: white;
+}
+
+.navbar button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #22ff88;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: #1a1f4d;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* SCORE */
+.score-card {
+  text-align: center;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #22ff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.score-circle span {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/* COMMENTS */
+.comments {
+  padding: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  border: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #1f235a;
+  color: white;
+}
+
+.comments button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #7c5cff;
+  color: white;
+  cursor: pointer;
+}
+
+#commentList {
+  list-style: none;
+  padding: 0;
+}
+
+#commentList li {
+  margin-top: 10px;
+  background: #1a1f4d;
+  padding: 10px;
+  border-radius: 8px;
+}

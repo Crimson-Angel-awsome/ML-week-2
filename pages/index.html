@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>GrooveCheck</title>
+  <link rel="stylesheet" href="/assets/styles/style.css" />
+  <script src="/assets/script/script.js" defer></script>
 </head>
 <body>
-    <header>
 
-    </header>
-    <main>
-        
-    </main>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>🎵 GrooveCheck</h2>
+
+    <select id="businessSelect">
+      <option>Loading businesses...</option>
+    </select>
+
+    <button onclick="requestReview()">Request Review</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Find the Right Groove</h1>
+    <p>Sentiment-driven reputation for service businesses.</p>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+
+    <div class="card">
+      <h3>Groove Trends (Last 30 Days)</h3>
+      <canvas id="trendChart"></canvas>
+    </div>
+
+    <div class="card score-card">
+      <h3>Groove Score</h3>
+      <div class="score-circle">
+        <span id="score">42</span>
+      </div>
+      <p id="mood">Mixed</p>
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="comments">
+    <h3>Leave a Review</h3>
+
+    <textarea
+      id="commentInput"
+      placeholder="Share your experience..."
+    ></textarea>
+
+    <button onclick="submitComment()">Submit Review</button>
+
+    <ul id="commentList"></ul>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
