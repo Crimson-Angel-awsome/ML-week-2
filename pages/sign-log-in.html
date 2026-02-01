@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groove</title>
+  <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-    <main>
-       <section class="capture">
-        <h1><a href="index.html">VibeCheck</a></h1>
 
-         <!-- Tabs -->
-        <section class="tabs">
-            <div class="switch-tabs">
-                <button class="tab-active" data-tab="Login">Log in</button>
-                <button class="tab" data-tab="Signup">Sign up</button>
-            </div>
-        </section>
+<main class="s-l-pro">
+  <section class="capture">
+    <h1><a href="index.html">Groove</a></h1>
 
-        <!-- Log-in form -->
-         <section class="tab-content-real" id="Login">
-            <h2>Log-in</h2>
-            <form id="log-in">
-                <div>
-                    <p><label for="email">Email Address</label><br>
-                    <input type="email" name="email" id="email" placeholder="write your username" required autocomplete="username" /></p>
-                </div>
+    <!-- Tabs -->
+    <section class="tabs">
+      <div class="switch-tabs">
+        <button class="tab tab-active" data-tab="login">Log in</button>
+        <button class="tab" data-tab="signup">Sign up</button>
+      </div>
+    </section>
 
-                <div>
-                    <p><label for="password">Password</label><br>
-                    <input type="password" name="password" id="password" placeholder="write your password" required/></p>
-                </div>
+    <!-- Login -->
+    <section class="tab-content tab-show" id="login">
+      <h2>Log in</h2>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
 
-                <div class="submit-button">
-                    <button type="submit" class="submit-btn">Login</button>
-                </div>
-            </form>
-         </section>
+        <label>Password</label>
+        <input type="password" placeholder="password" required>
 
-            <!-- Sign-up form -->
-             <section class="tab-content-real" id="sign-up">
-            <h2>Sign-up</h2>
-            <form id="sign-up">
-                <div class="form-group">
-                    <p><label for="username">Username</label><br>
-                    <input type="text" name="username" id="username" required autocomplete="username" />
-                </div>
+        <button type="submit" class="btn-submit">Login</button>
+      </form>
+    </section>
 
-                <div class="form-group">
-                    <p>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" required autocomplete="email"/>
-                    </p>
-                </div>
-                <div class="form-group">
-                    <p>
-                        <label for="password">Password</label><br>
-                        <input type="password" name="password" id="password" required autocomplete="new-password"/>
-                    </p>
-                </div>
+    <!-- Signup -->
+    <section class="tab-content" id="signup">
+      <h2>Sign up</h2>
+      <form>
+        <label>Username</label>
+        <input type="text" placeholder="e.g John Doe" required>
 
-                <div class="submit-button">
-                    <button type="submit" class="submit-btn">Sign up</button>
-                </div>
-            </form>
-             </section>    
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
 
-        </section>
-    </main>
+        <label>Password</label>
+        <input type="password" placeholder="password" required>
+
+        <button type="submit" class="btn-submit">Sign up</button>
+      </form>
+    </section>
+
+  </section>
+</main>
+
+<script src="/assets/script/script.js"></script>
 </body>
 </html>

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrooveFlow</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
     <header>
-        <div>
-            <div>
+        <div class="header-container">
+            <div class="first">
                 <h1><a href="index.html">GrooveFlow</a></h1>
             </div>
 
@@ -18,7 +19,8 @@
                     <button type="submit">🔍</button>
                 </form>
             </div>
-
+            
+            <div class="header-right">
             <div class="nav">
                 <nav>
                     <ul>
@@ -28,11 +30,11 @@
                 </nav>
             </div>
             <div class="s-l-btn">
-                <button class="sign" type="submit">Sign In</button>
+                <button class="sign" type="submit"><a href="/pages/sign-log-in.html">Sign In</a></button>
+            </div>
             </div>
         </div>
     </header>
-
     <main>
         <section>
             <section class="hero-section">
@@ -43,19 +45,35 @@
                 </p>
             </section>
 
-            <section class="jobs">
-                Trending Groove
+            <section class="job">
+                <div class="jobs">
+                <h2>Trending Groove</h2>
 
-                <div>
-                    <div class="labels">
-                        <button class="label">All Categories</button>
-                        <button class="label">Near Me</button>
-                    </div>
-
-                    <div></div>
+                <div class="labels">
+                    <button class="label">All Categories</button>
+                    <button class="label">Near Me</button>
+                </div>
+                </div>
+                <div class="job-list">
+                   <a href="/pages/chris.html" class="job-items">
+                    <h2>Chris's Coffee Shop</h2>
+                   </a>
+                   <a href="/pages/joe.html" class="job-items">
+                    <h2>Joe's Bakery</h2>
+                   </a>
+                   <a href="/pages/sage.html" class="job-items">
+                    <h2>Sage's Tech Hub</h2>
+                   </a>
+                   <a href="/pages/sammy.html" class="job-items">
+                    <h2>Sammy's Sports Bar</h2>
+                   </a>
                 </div>
             </section>
         </section>
     </main>
+
+    <footer>
+        <p>&copy;2026 GrooveFlow Industries. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

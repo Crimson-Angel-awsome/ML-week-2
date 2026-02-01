@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GrooveFlow – Sage's Tech Hub</title>
+
+  <!-- Chart.js -->
+  <script src="/assets/script/chart.js"></script>
+
+  <link rel="stylesheet" href="/assets/styles/style.css" />
+</head>
+<body>
+
+  <header>
+        <div class="header-container">
+            <div class="first">
+                <h1><a href="index.html">GrooveFlow</a></h1>
+            </div>
+
+            <div id="search-bar">
+                <form class="search">
+                    <input type="search" name="query" placeholder="Search for a groove..." aria-label="Search"/>
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            
+            <div class="header-right">
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">For Business</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="s-l-btn">
+                <button class="sign" type="submit"><a href="/pages/sign-log-in.html">Sign In</a></button>
+            </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="header">
+      <div>
+        <h1>Sage's Tech Hub</h1>
+        <p class="subtitle">Tech Hub</p>
+      </div>
+
+      <div class="score-card">
+        <div class="circle">
+          <span class="score">88</span>
+          <small>GROOVE SCORE</small>
+        </div>
+        <p class="positive">Highly Positive</p>
+        <button class="btn-review">💬 Leave a Review</button>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section class="card">
+      <h2>📈 Groove Flow (Last 30 Days)</h2>
+      <canvas id="GrooveChart"></canvas>
+    </section>
+
+    <!-- TAGS -->
+    <section class="card">
+      <h2>What people are saying</h2>
+      <div class="tags">
+        <span>fast service</span>
+        <span>clean environment</span>
+        <span>great latte</span>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews">
+      <h2>Recent Reviews</h2>
+
+      <div class="review-card">
+        <div class="review-header">
+          <strong>Alex S.</strong>
+          <span>2 days ago</span>
+          <span class="badge green">92 Groove</span>
+        </div>
+        <p>The atmosphere here is unmatched. Definitely coming back!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <strong>Jordan M.</strong>
+          <span>5 days ago</span>
+          <span class="badge yellow">75 Groove</span>
+        </div>
+        <p>Service was a bit slow today, but the quality is still top-notch.</p>
+      </div>
+    </section>
+  </main>
+    <footer>
+        <p>&copy;2026 GrooveFlow Industries. All Rights Reserved.</p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
